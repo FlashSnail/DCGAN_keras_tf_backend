@@ -28,7 +28,7 @@ model.d.compile(loss='binary_crossentropy', optimizer=optim, metrics=['acc',auc]
 
 * g_depths: Generator feature depth of each layer
 * d_depths: Discriminator feature depth of each layer
-* g_size: base size, the output image's size will be size*2**(len(depths)-1)
+* g_size: base size, the output image's size will be size*2**(len(depths)-2)
 * d_size: input size
 
 

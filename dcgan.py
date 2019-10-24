@@ -24,7 +24,7 @@ class Generator:
         '''
         #depths[-1] : final depth you want to output
         
-        #size : base size, the output will be size*2**(len(depths)-1)
+        #size : base size, the output will be size*2**(len(depths)-2)
         '''
         
         self.depths = depths
