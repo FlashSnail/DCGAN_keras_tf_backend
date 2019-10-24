@@ -87,10 +87,8 @@ class Discriminator:
         inputs = Input(shape=(self.size, self.size, self.depths[0]))
         #conv
         model = self.conv(inputs, self.depths[1], (5,5))
-        #for depth in self.depths[2:3]:
-        #    model = self.conv(model, depth, (5,5))
-        #model = self.conv(model, self.depths[2], (5,5), padding='valid')
-        model = self.conv(model, self.depths[2], (5,5))
+        for depth in self.depths[2:3]:
+            model = self.conv(model, depth, (5,5))
         #output
         model = Flatten()(model)
         model = Dense(1024)(model)
