@@ -76,7 +76,7 @@ class Discriminator:
         '''
         #depths[-1] : final depth you want to output
         
-        #size : input size
+        #size : input size, last conv layer output size = size / 2 ** (length(depths)-1)
         '''
         
         self.depths = depths
